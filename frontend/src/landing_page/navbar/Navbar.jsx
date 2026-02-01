@@ -53,9 +53,17 @@ function Navbar() {
 				<div className={`navbar-navigation-capsules ${isMenuOpen ? 'show' : ''}`}>
 					<ul className="navbar-nav-custom">
 						<li className="nav-item">
-							<a className="nav-link nav-link-about" href="/about">
+							{/* <a className="nav-link nav-link-about" href="/about">
 								About Us
-							</a>
+							</a> */}
+							<Link
+								to="/about"
+								className="nav-link nav-link-about"
+								onClick={closeMenu}
+							>
+								About Us
+							</Link>
+
 						</li>
 						<li className="nav-item">
 							<button
